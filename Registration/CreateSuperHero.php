@@ -28,7 +28,7 @@ class CreateSuperHero extends FormRequest
     public function validateUsername()
     {
         $username = $this->post('username');
-        $selectQuery = "SELECT id FROM makerbot_users where username=:username";
+        $selectQuery = "SELECT id FROM superhero_users where username=:username";
         $params = array(
             'username' => $username,
         );
@@ -50,7 +50,7 @@ class CreateSuperHero extends FormRequest
         $dateTimeZone = new \DateTimeZone(date_default_timezone_get());
         $dateTimeObject->setTimezone($dateTimeZone);
         $registrationDate = $dateTimeObject->format('Y-m-d H:i:s');
-        $insertQuery = "INSERT INTO makerbot_users(email,name,password,username,register_date)
+        $insertQuery = "INSERT INTO superhero_users(email,name,password,username,register_date)
                         VALUES(:email, :fullname, :password, :username, :registeredDate)";
         $params = array(
             'email' => $email,

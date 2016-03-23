@@ -32,7 +32,7 @@ class SQLiteConnector extends PDO
      */
     private function _createTable()
     {
-        $this->exec('CREATE TABLE IF NOT EXISTS makerbot_users(
+        $this->exec('CREATE TABLE IF NOT EXISTS superhero_users(
                               id INTEGER PRIMARY KEY AUTOINCREMENT,
                               email TEXT NOT NULL,
                               name TEXT NOT NULL,
@@ -41,7 +41,7 @@ class SQLiteConnector extends PDO
                               register_date datetime NOT NULL,
                               last_login datetime
                               )');
-        $this->exec('CREATE UNIQUE INDEX IF NOT EXISTS makerbot_users_username_uindex ON makerbot_users(username)');
+        $this->exec('CREATE UNIQUE INDEX IF NOT EXISTS superhero_users_username_uindex ON superhero_users(username)');
     }
 
     /**

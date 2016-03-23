@@ -1,7 +1,7 @@
 <?php
 require 'setup.php';
 if (isset($_POST['clickMe'])) {
-    $dir = 'sqlite:makerbotdb.sqlite';
+    $dir = 'sqlite:superheroRegistrationAct.sqlite';
     $user = new Registration\CreateSuperHero(new DataConnectors\SQLiteConnector($dir));
     $isCreated = $user->create();
     if ($isCreated) {

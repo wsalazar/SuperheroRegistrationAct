@@ -32,7 +32,7 @@ class SuperHeroAct extends FormRequest
         $dateTimeZone = new \DateTimeZone(date_default_timezone_get());
         $dateTimeObject->setTimezone($dateTimeZone);
         $lastLoginDate = $dateTimeObject->format('Y-m-d H:i:s');
-        $selectQuery = "SELECT id, password FROM makerbot_users where username=:username";
+        $selectQuery = "SELECT id, password FROM superhero_users where username=:username";
         $params = array(
             'username' => $username,
         );
@@ -40,7 +40,7 @@ class SuperHeroAct extends FormRequest
         foreach($results as $result) {
             $actualPassword = $result['password'];
             if (password_verify($enteredPassword, $actualPassword)) {
-                $updateQuery = "UPDATE makerbot_users set last_login=:lastLogin WHERE username =:username";
+                $updateQuery = "UPDATE superhero_users set last_login=:lastLogin WHERE username =:username";
                 $params = array(
                     'lastLogin' => $lastLoginDate,
                     'username' => $username,
