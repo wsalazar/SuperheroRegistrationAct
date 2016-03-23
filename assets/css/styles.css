@@ -7,21 +7,17 @@ body {
 }
 
 body.login-page{
-    background-image: url('http://static2.hypable.com/wp-content/uploads/2015/08/civil-war-teams-3.jpg');
+    background-image: url('../images/superheroLoginImage.jpg');
     background-size: 1498px 903px;
 }
 
 body.register-page {
-    background-image: url('https://i.ytimg.com/vi/pPPZGZE14pA/maxresdefault.jpg');
+    background-image: url('../images/superheroRegistration.jpg');
     background-size: 1046px 987px;
 }
 
-body.error-page {
-    background-image: url('http://media.moddb.com/cache/images/members/1/381/380621/thumb_620x2000/star-wars-yoda-pissed-me-off-you-have.jpg');
-}
-
 body.dashboard-page{
-    background-image: url('http://images.latinpost.com/data/images/full/61727/captain-america-iron-man-civil-war.jpg?w=600');
+    background-image: url('../images/superheroDashboard.jpg');
 }
 
 legend {
