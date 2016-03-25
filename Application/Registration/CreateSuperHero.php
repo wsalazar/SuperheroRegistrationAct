@@ -2,7 +2,6 @@
 
 namespace Application\Registration;
 
-use Application\DataConnectors\DatabaseConnector;
 use Application\Request\FormRequest;
 
 class CreateSuperHero extends FormRequest

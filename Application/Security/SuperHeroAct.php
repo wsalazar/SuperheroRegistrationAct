@@ -2,7 +2,6 @@
 
 namespace Application\Security;
 
-use Application\DataConnectors\DatabaseConnector;
 use Application\Request\FormRequest;
 
 class SuperHeroAct extends FormRequest
