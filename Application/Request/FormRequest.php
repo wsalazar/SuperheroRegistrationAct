@@ -1,6 +1,6 @@
 <?php
 
-namespace Request;
+namespace Application\Request;
 
 class FormRequest
 {

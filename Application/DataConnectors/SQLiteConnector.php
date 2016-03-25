@@ -1,6 +1,6 @@
 <?php
 
-namespace DataConnectors;
+namespace Application\DataConnectors;
 
 use PDO;
 

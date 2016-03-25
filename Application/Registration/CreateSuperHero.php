@@ -1,9 +1,9 @@
 <?php
 
-namespace Registration;
+namespace Application\Registration;
 
-use DataConnectors\DatabaseConnector;
-use Request\FormRequest;
+use Application\DataConnectors\DatabaseConnector;
+use Application\Request\FormRequest;
 
 class CreateSuperHero extends FormRequest
 {

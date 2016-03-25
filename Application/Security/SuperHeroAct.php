@@ -1,9 +1,9 @@
 <?php
 
-namespace Security;
+namespace Application\Security;
 
-use DataConnectors\DatabaseConnector;
-use Request\FormRequest;
+use Application\DataConnectors\DatabaseConnector;
+use Application\Request\FormRequest;
 
 class SuperHeroAct extends FormRequest
 {
