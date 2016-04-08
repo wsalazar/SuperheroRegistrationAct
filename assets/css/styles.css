@@ -25,10 +25,14 @@ legend {
     color: white;
     font-size: 2em;
 }
+
 fieldset {
     border: none;
 }
 
+input#email, input#username, input#fullname, input#password{
+    width:280px;
+}
 
 div#masthead {
     width: 100%;
@@ -47,15 +51,15 @@ div#masthead {
     display: inline-block;
     width: 30%;
 }
-.login {
+.login, .register {
     float: right;
-    margin-top: -53px;
+    margin-top: 26px;
     margin-right: 20px;
 }
-a.login-link:hover {
+a.login-link:hover, a.register-link:hover {
     color: midnightblue;
 }
-a.login-link {
+a.login-link, a.register-link {
     color: red;
     text-decoration: none;
 }
